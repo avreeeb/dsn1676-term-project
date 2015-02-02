@@ -23,6 +23,11 @@ text-size-adjust: 100%;
 .os{
 font-family: 'Oswald', sans-serif;
 color:white;
+margin:0;
+}
+
+.pad{
+	padding-top:-2em;
 }
 
 .r2-d2 {
