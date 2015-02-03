@@ -102,6 +102,7 @@ animation: bounce 8s ease-in-out infinite alternate;
 	100% { 
 		-webkit-transform:translateY(-100px);
 	}
+}
 
 
 @keyframes bounce {
