@@ -170,6 +170,20 @@ animation: bounce 8s ease-in-out infinite alternate;
 @keyframes text {
 	
 	0% {
+		-webkit-transform:translateX(1000px);
+	
+	}
+	
+	
+	100% { 
+		-webkit-transform:translateX(0px);
+	}
+		
+}
+
+@keyframes text {
+	
+	0% {
 		transform:translateX(1000px);
 	
 	}
