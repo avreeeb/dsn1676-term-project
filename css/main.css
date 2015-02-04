@@ -1,3 +1,7 @@
+html[Attributes Style] {
+-webkit-locale: en-ca;
+}
+
 @-moz-viewport { width: device-width; scale: 1; }
 @-ms-viewport { width: device-width; scale: 1; }
 @-o-viewport { width: device-width; scale: 1; }
