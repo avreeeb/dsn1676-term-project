@@ -207,3 +207,83 @@ width: 10%;
 top: 80%;
 left: calc(55% - 10%);
 }
+
+.fade
+{
+        opacity:0.5;
+}
+.fade:hover
+{
+        opacity:1;
+}
+
+.grow:hover
+{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+}
+
+.panel {
+    display: none;
+}
+
+.js-panel-open {
+    display: block;
+}
+
+.menu {
+    height: 1.5rem;
+    width: 2.5rem;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+	background-image:url(../../../project-1/dsn1676-term-project/images/menu.svg);
+    top: 1rem;
+    left: 5%;
+    z-index: 100;
+    padding: 0;
+    margin: 20px;
+    border: 0;
+}
+
+
+.red {
+	background-color:#E5555B;
+}
+
+nav {
+ padding: 0;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid #E1D6C3;
+}
+
+nav li {
+    background-color: #E5555B;
+    border-bottom: 1px solid #E1D6C3;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: E5555B;
+    width: 100%;
+    padding: 25px;
+}
+
+nav a:hover {
+    background-color:#E9C925;
+}
+
+[hidden] {
+    display: none;
+}
+
+
+
