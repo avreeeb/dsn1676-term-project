@@ -14,9 +14,6 @@ var $box = $('.box')
 var $btnMove = $('.btn-move');
 var $diamond = $('.diamond');
 
-var $btnBounce = $('.btn-bounce');
-var $circle = $('.circle');
-
 $menu.on('click', function () {
   $panel.toggleClass('js-panel-open');
 });
@@ -40,12 +37,39 @@ $btnMove.on('click', function () {
     $diamond.toggleClass('js-diamond-move');
 });
 
-$btnBounce.on('click', function () {
-    $circle.addClass('js-circle-bounce');
+var $theCircle = $('.circle');
+var $moveDownButton = $('.move-down');
+var $moveUpButton = $('.move-up');
+var $moveLeftButton = $('.move-left');
+var $moveRightButton = $('.move-right');
+var $form = $('form');
+var $input = $('#the-color');
+
+
+//$theCircle.addClass('circle-border');
+
+$moveDownButton.on('click', function () {
+	var currentLocation = $theCircle.offset();
+console.log(currentLocation);
+	$theCircle.css('top', currentLocation.top + 10);
 });
 
-$circle.on('webkitAnimationEnd animationend', function () {
-	console.log('fired');
-    $circle.removeClass('js-circle-bounce');
+$moveUpButton.on('click', function () {
+	var currentLocation = $theCircle.offset();
+console.log(currentLocation);
+	$theCircle.css('top', currentLocation.top - 10);
 });
-	
+
+$moveLeftButton.on('click', function () {
+	var currentLocation = $theCircle.offset();
+console.log(currentLocation);
+	$theCircle.css('left', currentLocation.left - 10);
+});
+
+
+$moveRightButton.on('click', function () {
+	var currentLocation = $theCircle.offset();
+console.log(currentLocation);
+	$theCircle.css('left', currentLocation.left + 10);
+});
+

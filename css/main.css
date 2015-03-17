@@ -241,38 +241,10 @@ nav a:hover {
 }
 
 .circle {
-  height: 100px;
-  top: calc(50% - 50px);
-  width: 100px;
-  border-radius: 50%;
-
-  background-color: orange;
+	width: 200px;
+	height:200px;
+	background-image:url(../images/c3p0.svg);
+	border-radius: 50%;
+	position:absolute;
 }
-
-.js-circle-bounce {
-  -webkit-animation: circle-bounce 1s linear;
-  animation: circle-bounce 1s linear;
-}
-
-@-webkit-keyframes circle-bounce {
-  0% {right: 30px; top: calc(50% - 20px);}
-  20% {right: 60px; top: calc(50% - 50px);}
-  40% {right: 90px; top: calc(50% - 20px);}
-  60% {right: 120px; top: calc(50% - 50px);}
-  80% {right: 150px; top: calc(50% - 20px);}
-  100% {right: 180px; top: calc(50% - 50px);}
-}
-
-@keyframes circle-bounce {
-  0% {right: 30px; top: calc(50% - 20px);}
-  20% {right: 60px; top: calc(50% - 50px);}
-  40% {right: 90px; top: calc(50% - 20px);}
-  60% {right: 120px; top: calc(50% - 50px);}
-  80% {right: 150px; top: calc(50% - 20px);}
-  100% {right: 180px; top: calc(50% - 50px);}
-}
-
-
-
-
 
