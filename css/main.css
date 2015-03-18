@@ -41,25 +41,24 @@ margin:0;
 
 .r2-d2 {
 position: absolute;
-bottom: 200px;
-right: 150px;
+bottom: 100px;
+right: 100px;
 width: 256px;
 height: 256px;
--webkit-animation: bounce 8s ease-in-out infinite alternate;
+-webkit-animation: bounce 6s ease-in-out infinite alternate;
 animation: bounce 6s ease-in-out infinite alternate;
 }
 
 @-webkit-keyframes bounce {
 	
 	0% {
-		-webkit-transform:translateX(20px);
+		-webkit-transform:translateY(-120px);
 	
 	}
 	
 	
-	
 	100% { 
-		-webkit-transform:translateX(-400px);
+		-webkit-transform:translateY(100px);
 	}
 }
 
@@ -67,14 +66,13 @@ animation: bounce 6s ease-in-out infinite alternate;
 @keyframes bounce {
 	
 	0% {
-		transform:translateX(20px);
+		transform:translateY(-120px);
 	
 	}
 	
 	
-	
 	100% { 
-		transform:translateX(-400px);
+		transform:translateY(100px);
 	}
 	
 	
@@ -242,9 +240,8 @@ nav a:hover {
 
 .circle {
 	width: 200px;
-	height:200px;
+	height:100px;
 	background-image:url(../images/c3p0.svg);
-	border-radius: 50%;
 	position:absolute;
 }
 
