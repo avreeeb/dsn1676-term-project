@@ -10,57 +10,54 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <style type="text/css"></style>
 </head>
-
-
 <body hola-ext-player="1">
-
     <div class="red">
-        <button class="menu"></button>
+        <button id="top" class="menu"></button>
             <nav class="panel navigation">
-                <ul class="top-nav os">
+                <ul id="top" class="top-nav os">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#intro">Intro</a></li>
-                    <li><a href="#finale">Finale</a></li>
+                    <li><a href="#r2d2">R2D2</a></li>
+                    <li><a href="#yoda">Yoda</a></li>
+                    <li><a href="#chewbacca">Chewbacca</a></li>
+                    <li><a href="#c3po">C3PO</a></li>
                 </ul>
             </nav>
     </div>
-
-<h1 align="middle" class="yotta os">INTRODUCTION TO</h1>
+<h1 id="intro" align="middle" class="yotta os">INTRODUCTION TO</h1>
 <h1 align="middle" class="yot text pad os grow">ANIMATION</h1>
-
-<img src="images/r2-d2.svg" class="r2-d2" alt="r2-d2">
-
+<img id="r2d2" src="images/r2-d2.svg" class="r2-d2" alt="r2-d2">
 
 <section class="pad2">
-    <button class="btn-show-hide button2 os">Show/hide</button>
-    <div class="box"></div>
+    <button id="finale" class="btn-show-hide button2 os">Show/hide</button>
+    <div id="yoda" class="box"></div>
   </section>
   
   <section>
     <button class="btn-move button2 os">Move in/out</button>
-    <div class="diamond"></div>
+    <div id="chewbacca" class="diamond"></div>
   </section>
   
   
   <section>
   <button class="move-down button2 os">Move Down</button>
   </section>
-
 <section>
 <button class="move-up button2 os">Move Up</button>
 </section>
-
 <section>
 <button class="move-left button2 os">Move Left</button>
 </section>
-
 <button class="move-right button2 os">Move Right</button>
+<div id="c3po" class="circle"></div>
 
-<div class="circle"></div>
+<div align="middle" class="island-2 pad-2 top">
+<p class="os"><a href="#top">Top</a></p>
+</div>
  
-
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.4.0/jquery.localScroll.min.js"></script>
 <script src="js/main.js"></script>
-
 </body>
 </html>

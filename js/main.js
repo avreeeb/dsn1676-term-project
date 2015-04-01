@@ -73,3 +73,6 @@ console.log(currentLocation);
 	$theCircle.css('left', currentLocation.left + 10);
 });
 
+$('.nav').localScroll();
+$('.top').localScroll();
+
