@@ -250,3 +250,31 @@ nav a:hover {
 	padding-top: 4em;
 }
 
+.topp {
+	padding-top:400px;
+}
+
+#leia {
+	width: 256px;
+	position:absolute;
+	padding-top:200px;
+}
+
+#leia:hover {
+	width: 356px;
+	position:absolute;
+	padding-top:200px;
+}
+
+#eyes {
+	transform: translateY(0);
+	transition: all 200ms ease;
+}
+
+#leia:hover #eyes {
+	transform: translateY(-5px);
+}
+
+
+
+
