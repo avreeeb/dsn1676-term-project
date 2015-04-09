@@ -266,14 +266,27 @@ nav a:hover {
 	padding-top:200px;
 }
 
-#eyes {
-	transform: translateY(0);
-	transition: all 200ms ease;
+#one-eye {
+	opacity:0;
+}
+
+#leia:hover #one-eye {
+	opacity:1;
+}
+
+#mouth-2 {
+	opacity:0;
+}
+
+#leia:hover #mouth-2 { 
+	opacity:1;
 }
 
 #leia:hover #eyes {
-	transform: translateY(-5px);
+	opacity:0;
 }
+
+
 
 
 
