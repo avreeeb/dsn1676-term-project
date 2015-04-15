@@ -76,3 +76,8 @@ console.log(currentLocation);
 $('.nav').localScroll();
 $('.top').localScroll();
 
+var $lightSection = $('.light');
+
+$lightSection.waypoint(function () {
+	$lightSection.toggleClass('js-active');
+},{offset:"60%"});
