@@ -39,6 +39,21 @@ margin:0;
 	animation: text 2s ease-in-out;
 }
 
+.black {
+	background-color:black;
+	margin:0;
+}
+
+.stars {
+width: 100%;
+height: 100vh;
+background-image: url(../images/stars.svg);
+-webkit-animation: stars 5s ease-in-out infinite alternate;
+animation: stars 5s ease-in-out infinite alternate;
+}
+
+
+
 .r2-d2 {
 position: absolute;
 bottom: 100px;
@@ -223,31 +238,52 @@ nav a:hover {
 	
 }
 
-.diamond {
-	
-  height: 100px;
+.box {
+    height: 100px;
   top: calc(50% - 50px);
   width: 138px;
+
+  background-image:url(../images/yoda.svg);
+  -webkit-transition: all 250ms linear;
+  transition: all 250ms linear;
+  opacity: 0;
+}
+
+.js-box-dissappear {
+  opacity: 1;
+}
+
+.box2 {
+      height: 100px;
+  top: calc(50% - 50px);
+  width: 138px;
+
   background-image:url(../images/chewbacca.svg);
   -webkit-transition: all 250ms linear;
   transition: all 250ms linear;
+  opacity: 0;
 }
 
-.js-diamond-move {
-  -webkit-transform: translateX(-145px) rotate(45deg);
-  transform: translateX(-145px) rotate(45deg);
+.js-box2-dissappear {
+  opacity: 1;
 }
 
-.circle {
-	width: 200px;
+.box3 {
+      width: 200px;
 	height:100px;
 	background-image:url(../images/c3p0.svg);
 	position:absolute;
 	
+  -webkit-transition: all 250ms linear;
+  transition: all 250ms linear;
+  opacity: 0;
 }
 
+.js-box3-dissappear {
+  opacity: 1;
+}
 .pad-2 {
-	padding-top: 4em;
+	padding-top: 30em;
 }
 
 .topp {
@@ -311,6 +347,11 @@ nav a:hover {
 .js-active #window {
 	opacity: 1;
 }
+
+.pad3 {
+	padding-top: 7em;
+}
+
 
 
 

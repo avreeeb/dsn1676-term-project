@@ -8,14 +8,29 @@ var $panel = $('.panel');
 var $tabs = $('.tabs');
 var $panels = $('.tab-panel');
 
-var $btnShowHide = $('.btn-show-hide');
-var $box = $('.box')
-
-var $btnMove = $('.btn-move');
-var $diamond = $('.diamond');
-
 $menu.on('click', function () {
   $panel.toggleClass('js-panel-open');
+});
+
+var $btnShowHide = $('.btn-show-hide');
+var $box = $('.box');
+
+$btnShowHide.on('click', function () {
+    $box.toggleClass('js-box-dissappear');
+});
+
+var $btnShowHide = $('.btn-show-hide-2');
+var $box2 = $('.box2');
+
+$btnShowHide.on('click', function () {
+    $box2.toggleClass('js-box2-dissappear');
+});
+
+var $btnShowHide = $('.btn-show-hide-3');
+var $box3 = $('.box3');
+
+$btnShowHide.on('click', function () {
+    $box3.toggleClass('js-box3-dissappear');
 });
 
 $tabs.on('click', 'a', function (e) {
@@ -29,19 +44,6 @@ $tabs.on('click', 'a', function (e) {
   $(this).addClass('js-current');
 });
 
-$btnShowHide.on('click', function () {
-    $box.toggleClass('js-box-dissappear');
-});
-
-$btnMove.on('click', function () {
-    $diamond.toggleClass('js-diamond-move');
-});
-
-var $theCircle = $('.circle');
-var $moveDownButton = $('.move-down');
-var $moveUpButton = $('.move-up');
-var $moveLeftButton = $('.move-left');
-var $moveRightButton = $('.move-right');
 var $form = $('form');
 var $input = $('#the-color');
 
@@ -49,29 +51,9 @@ var $input = $('#the-color');
 //$theCircle.addClass('circle-border');
 
 $moveDownButton.on('click', function () {
-	var currentLocation = $theCircle.offset();
-console.log(currentLocation);
-	$theCircle.css('top', currentLocation.top + 10);
+	$theCircle.css('js-circle-dissappear');
 });
 
-$moveUpButton.on('click', function () {
-	var currentLocation = $theCircle.offset();
-console.log(currentLocation);
-	$theCircle.css('top', currentLocation.top - 10);
-});
-
-$moveLeftButton.on('click', function () {
-	var currentLocation = $theCircle.offset();
-console.log(currentLocation);
-	$theCircle.css('left', currentLocation.left - 10);
-});
-
-
-$moveRightButton.on('click', function () {
-	var currentLocation = $theCircle.offset();
-console.log(currentLocation);
-	$theCircle.css('left', currentLocation.left + 10);
-});
 
 $('.nav').localScroll();
 $('.top').localScroll();
